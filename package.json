@@ -1,0 +1,17 @@
+{
+  "name": "docsify-plugin-run",
+  "private": false,
+  "description": "docsify 在线运行 Vue 单文件",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "docsify",
+    "docsify vue",
+    "docsify editor",
+    "docsify demo"
+  ],
+  "scripts": {
+    "dev": "docsify serve ."
+  }
+}
