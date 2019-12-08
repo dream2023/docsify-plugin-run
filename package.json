@@ -3,15 +3,23 @@
   "private": false,
   "description": "docsify 在线运行 Vue 单文件",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "dev": "docsify serve ."
+  },
   "keywords": [
     "docsify",
     "docsify vue",
     "docsify editor",
-    "docsify demo"
+    "docsify demo",
+    "vue-run-sfc",
+    "docsify-sfc",
+    "docsify-plugin"
   ],
-  "scripts": {
-    "dev": "docsify serve ."
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dream2023/docsify-plugin-run"
+  },
+  "main": "src/index.js",
+  "homepage": "https://github.com/dream2023/docsify-plugin-run/"
 }
