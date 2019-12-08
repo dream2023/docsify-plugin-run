@@ -14,7 +14,7 @@ const getCustomOptions = function (str) {
 
 // 替换markdown内容
 const replaceContent = function (content) {
-  const regexp = /^```\s*html\s+run(.*\r\n)([^]*?)```/gm
+  const regexp = /^```\s*html\s+run(.*\r?\n)([^]*?)```/gm
   const globalOptions = window.$docsify.run
 
   return content.replace(regexp, (matched, optionsStr, code) => {

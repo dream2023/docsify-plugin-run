@@ -65,6 +65,8 @@
 <script src="//unpkg.com/vue/dist/vue.min.js"></script>
 <!-- 引入 vue-run-sfc -->
 <script src="//unpkg.com/vue-run-sfc"></script>
+<!-- 引入 docsify-plugin-run -->
+<script src="//unpkg.com/docsify-plugin-run"></script>
 <!-- docsify -->
 <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 ```
