@@ -2,7 +2,7 @@
   "name": "docsify-plugin-run",
   "private": false,
   "description": "docsify 在线运行 Vue 单文件",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "license": "MIT",
   "scripts": {
     "dev": "docsify serve ."

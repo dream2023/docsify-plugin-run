@@ -4,7 +4,7 @@
 
 `docsify-plugin-run` 通过对 [vue-run-sfc](https://github.com/dream2023/vue-run-sfc) 的封装, 实现了 docsify 在线运行和编辑 Vue 单文件的能力, 简直是写 DEMO 福音, 再也不用担心 `JSFiddle` 或 `Codepen` 无法访问了.
 
-```html run [open=true]
+```html run {open: true}
 <template>
   <h2 class="title">{{name}} DEMO利器!</h2>
 </template>
@@ -85,7 +85,7 @@
 </script>
 ```
 
-```html run [jsLabs=https://unpkg.com/element-ui/lib/index.js] [cssLabs=https://unpkg.com/element-ui/lib/theme-chalk/index.css]
+```html run {jsLabs: 'https://unpkg.com/element-ui/lib/index.js', cssLabs:'https://unpkg.com/element-ui/lib/theme-chalk/index.css'}
 <template>
   <el-tabs type="border-card">
     <el-tab-pane label="用户管理">用户管理</el-tab-pane>
@@ -111,7 +111,7 @@
 
 ### 局部配置: 自定义显示
 
-```html run [title=局部配置] [height=200px] [row=true]
+```html run {title: '局部配置', height: '200px', row: true}
 <template>
   <div>通过局部配置实现<b>高度自定义</b>和<b>左右布局</b></div>
 </template>
@@ -123,7 +123,7 @@ b {
 ```
 
 ```html
-``html run [title=局部配置] [height=200px] [row=true]
+``html run {title: '局部配置', height: '200px', row: true}
 <template>
   <div>通过局部配置实现<b>高度自定义</b>和<b>左右布局</b></div>
 </template>

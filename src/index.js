@@ -1,15 +1,15 @@
 // 获取 自定义设置
 const getCustomOptions = function (str) {
-  const regexp = /\[(.+?)\]/g
-  return (str.match(regexp) || [])
-    .map(item => item.substr(1, item.length - 2).split('='))
-    .reduce((acc, cur) => {
-      let [key, val = true] = cur
-      if (val === 'false') val = false
-      if (val === 'true') val = true
-      acc[key] = val
-      return acc
-    }, {})
+  let customOptions = str.match(/\{.*?\}/)
+  if (customOptions) {
+    try {
+      // eslint-disable-next-line no-new-func
+      customOptions = new Function(`return ${customOptions[0]}`)()
+    } catch {
+      customOptions = {}
+    }
+  }
+  return customOptions
 }
 
 // 替换markdown内容
