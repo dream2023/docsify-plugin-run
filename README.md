@@ -49,7 +49,9 @@
 <!-- 引入 vue-run-sfc -->
 <script src="//unpkg.com/vue-run-sfc"></script>
 <!-- 引入 docsify-plugin-run -->
-<script src="https://unpkg.com/docsify-plugin-run@1.0.0/src/index.js"></script>
+<script src="https://unpkg.com/docsify-plugin-run/src/index.js"></script>
+<!-- 指定版本 -->
+<!-- <script src="https://unpkg.com/docsify-plugin-run@xx.xx.xx/src/index.js"></script> -->
 <!-- docsify -->
 <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 ```
